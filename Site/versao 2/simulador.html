@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form>
+Insira tamanho da estufa:
+    <input type="number" id="tamanho_estufa" style="margin-right: 30px">
+
+selecione o cogumelo: 
+    <select id="cogumelos" style="margin-right: 30px">
+        <option value="" style="margin-left: 30px">--Selecione um cogumelo--</option>
+        <option value="16" style="margin-left: 30px">Cogumelo Paris</option>
+    </select>
+    <button type="button" onclick="calcular()">Calcule seu ganho</button>
+
+</form>
+<div id="div_mensagem"></div>
+<script>
+    
+    function calcular() {
+var producao = (tamanho_estufa.value * 1.5);
+var lucro = producao * Number(cogumelos.value);
+        div_mensagem.innerHTML = `Você consiguirá produzir em média: ${producao}kg, tendo um ganho de R$ ${lucro.toFixed(2)}.`;
+    }
+    </script>   
+</body>
+</html>
