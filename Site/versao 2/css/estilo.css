@@ -5,19 +5,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
   background: #0a2d33;       
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
- 
+  overflow-x: hidden; /* retira a barra de rolagem horizontal */
 }
 
 /*navegação do menu*/
 
 a, a:hover {
-  color: #33334d;
+  color: #b4b4b4;
   text-decoration: none;
   font-weight: 600;
 }
@@ -135,7 +136,7 @@ nav .links li:hover > .drop {
 .container{
   text-align: center;
   padding: 10px;
-  
+
 }
 /*Final section*/
 
