@@ -1,0 +1,43 @@
+        .galeria {
+            width: 1000px;
+            height: 300px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            margin-left: 150px;
+            display: block;
+        }
+
+        .foto {
+            position: absolute;
+            opacity: 0;
+            animation-name: teste;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            width: 1000px;
+            height: 300px;
+            border : solid;
+            left: center;
+            margin: 5px;
+        }
+
+        .foto:nth-child(1) {
+            animation-delay: -1s;
+
+        }
+
+        .foto:nth-child(2) {
+            animation-delay: 2s;
+
+        }
+
+        .foto:nth-child(3) {
+            animation-delay: 5s;
+        }
+
+        @keyframes teste {
+            25% {
+                opacity: 1;
+                 /* transform: scale(1.1, 1.1);  */                 
+            }
+        }
